@@ -2,8 +2,8 @@
 
 /**
  *main - Entry Point
- *describtion: This is a C program to that prints the size of various types
- *return: always 0 (success)
+ *Describtion: This is a C program to that prints the size of various types
+ *Return: always 0 (success)
 */
 
 int main(void)
