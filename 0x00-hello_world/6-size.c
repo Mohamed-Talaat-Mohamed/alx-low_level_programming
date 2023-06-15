@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-*main - entry point
-*describtion: a C program to that prints the size of various types on the computer it is compiled and run on
-*return: always 0 (success)
+ *main - Entry Point
+ *describtion: This is a C program to that prints the size of various types
+ *return: always 0 (success)
 */
 
 int main(void)
