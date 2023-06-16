@@ -5,7 +5,7 @@
 /**
  * main - Entry Point
  *
- *Description: This Is a C program prints if number is positve, zero or negative.
+ *Description: This Is a C program prints if number is positve,zero or negative
  *
  *Return: Always 0 (Success)
 */
