@@ -5,7 +5,7 @@
 /**
  * main - Entry Point
  *
- *Description: A C program printsf *possible combinations of single-digit numbers
+ *Description: A C program printsf *possible combinations single-digit num.
  *
  *Return: Always 0 (Success)
 */
