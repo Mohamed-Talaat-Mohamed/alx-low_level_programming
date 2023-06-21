@@ -4,15 +4,13 @@
  * _isalpha - check if character is lowercase
  *@c: Checks if the character 'c' is lowercase
  * Return: 1 if c is lowercase, 0 otherwise
- */
+*/
+
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
 		return (1);
 	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
