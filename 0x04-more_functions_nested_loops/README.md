@@ -1,1 +1,1 @@
-0x04-more_functions_nested_loops
+This README to start practising on C language
