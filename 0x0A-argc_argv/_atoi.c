@@ -4,7 +4,7 @@
 /**
  * _atoi - takes a pointer to char and turn it into an int.
  * @s: string turned into int
- * Return: return int n.
+ *Return: return int n.
  */
 int _atoi(char *s)
 {
@@ -24,7 +24,6 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 			++d;
-
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
@@ -38,36 +37,7 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-
 	if (f == 0)
 		return (0);
-
 	return (n);
-}
-
-/**
- * main - Entry point
- * a program that multiplies two numbers.
- * @argc: arguments count
- * @argv: array of arguments
- * Return: if doesn't recieve 2 arguments return 1,
- *	if recieved 2 arguments return 0 (Success).
-*/
-int main(int argc, char *argv[])
-{
-	int result, n1, n2;
-
-	if (argc < 3 || argc > 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	n1 = _atoi(argv[1]);
-	n2 = _atoi(argv[2]);
-	result = n1 * n2;
-
-	printf("%d\n", result);
-
-	return (0);
 }
