@@ -12,14 +12,18 @@
  *		Return apointer to the array if it fails
 */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-	char *c = malloc(size);
+	char *n = malloc(size);
 
-	if (size == 0 || c == 0)
+	if (size == 0 || n == 0)
+	{
 		return (NULL);
+	}
 
 	while (size--)
-		c[size] = c;
-		return (c);
+		n[size] = c;
+	{
+		return (n);
+	}
 }
