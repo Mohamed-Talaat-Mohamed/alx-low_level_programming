@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- *main - main Entry
+ * main - Entry point
  *
- *print the name of this source file
+ * a program that print the name of this source file
  *
- *Return: Always 0
+ * Return: Always 0
 */
 
 int main(void)
