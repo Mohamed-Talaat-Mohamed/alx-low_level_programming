@@ -11,7 +11,7 @@ int wildcmp(char *str1, char *str2)
 {
 	if (*str1 == '\0')
 	{
-		else if (*str2 != '\0' && *str2 == '*')
+		if (*str2 != '\0' && *str2 == '*')
 		{
 			return (wildcmp(str1, str2 + 1));
 		}
