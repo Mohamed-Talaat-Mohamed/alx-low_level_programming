@@ -13,14 +13,14 @@ int main(int argc, char **argv)
 {
 	int sum = atoi(argv[1]) * atoi(argv[2]);
 
-	if (argc != 3)
+	if (argc == 3)
 	{
-		printf("Error\n");
-	return (1);
+		printf("%i\n", sum);
+		return (0);
 	}
 	else
 	{
-		printf("%d\n", sum);
+		printf("Error\n");
+		return (1);
 	}
-	return (0);
 }
