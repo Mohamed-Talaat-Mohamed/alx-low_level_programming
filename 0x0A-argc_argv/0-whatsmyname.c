@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - A function to print the program name
+ * main - Entry point
+ *A program that print it`s name followed by new line
  * @argc: Number of arguments
  * @argv: Array of arguments
  * return: Always 0 (success)
