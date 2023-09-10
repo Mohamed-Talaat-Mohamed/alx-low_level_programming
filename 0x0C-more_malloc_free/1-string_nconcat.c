@@ -14,35 +14,41 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	unsigned int x, y, s1_length, s2_length;
+	unsigned int i = 0, j = 0, lens1 = 0, lens2 = 0;
 
-	/*treating Null passed as empty string*/
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	while (s1 && s1[lens1])
+		{
+		lens1++;
+		}
+	while (s2 && s2[lens2])
+		{
+		lens2++;
+		}
 
-	/*calculate both of s1_length & s2_length*/
-	for (s1_length = 0; s1[s1_length]; s1_length++)
-	;
-	for (s2_length = 0; s2[s2_length]; s2_length++)
-	;
 
-	/*memory allocation*/
-	str = malloc(s1_length + n + 1);
+		if (n < lens2)
+
+			str = malloc(sizeof(char) * (lens1 + n + 1));
+		else
+
+			str = malloc(sizeof(char) * (lens1 + lens2 + 1));
+
+		if (!str)
+
+			return (NULL);
+
+	while (i < lens1)
 	{
-		if (str == NULL)
-		return (NULL);
+		str[i] = s1[i];
+		i++;
 	}
+	while (n < lens2 && i < (lens1 + n))
+		str[i++] = s2[j++];
 
-	/*default action*/
-	for (x = 0; s1[x] != '\0'; x++)
-		str[x] = s1[x];
+	while (n >= lens2 && i < (lens1 + lens2))
+		str[i++] = s2[j++];
 
-	/*n is greater or equal to the length of s2*/
-	for (y = 0; y < n; y++)
-		str[x] = s2[y];
-			x++;
-	str[x] = '\0';
+	str[i] = '\0';
+
 	return (str);
 }
