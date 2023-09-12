@@ -6,6 +6,7 @@
  * print_dog - a function that prints a struct dog
  *
  * @d: apinter to struct dog
+ * Return: void
  */
 
 void print_dog(struct dog *d)
