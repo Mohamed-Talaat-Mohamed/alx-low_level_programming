@@ -1,29 +1,82 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
+
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 
 /**
- *get_op_func - get the required function
+ * op_add - addition of num1 and num2
  *
- *@s : Go to call target function
+ * @a: num1
  *
- *Return: pointer to the target function
+ * @b: num2
+ *
+ * Return: (a+b)
  */
 
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL},
-	};
+	return (a + b);
+}
 
-	int i = 0;
+/**
+ * op_sub - subtraction of num1 and num2 
+ *
+ * @a: num1
+ *
+ * @b: num2
+ *
+ * Return: (a-b)
+ */
 
-	while (ops[i].op != NULL && *ops[i].op != *s)
-		i++;
-	return (ops[i].f);
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - multipliction of num1 and num2
+ *
+ * @a: num1
+ *
+ * @b: num2
+ *
+ * Return: (a*b)
+ */
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - dividtion of num1 and num2
+ *
+ * @a: num1
+ *
+ * @b: num2
+ *
+ * Return: (a/b)
+ */
+
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+ * op_mod - moduluation of num1 and num2
+ *
+ * @a: num1
+ *
+ * @b: num2
+ *
+ * Return:( modulas)
+ */
+
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
