@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - prints all the elements of a listint_t
+ * print_listint - a function to rints all the elements of a listint_t
  *
  * @h: pointer of the list
  *
