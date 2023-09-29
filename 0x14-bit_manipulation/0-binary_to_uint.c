@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * binary_to_uint - function to convert binary num to unsigned int
+ * binary_to_uint - a function to convert binary num to unsigned int
  *
  * @b: list of ones and zeros
  *
- * Return: num if success or zero if faild
+ * Return: the num if success or zero if faild
  */
 
 unsigned int binary_to_uint(const char *b)
