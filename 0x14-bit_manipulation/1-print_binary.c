@@ -10,16 +10,19 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int countbites = sizeof(n) * 8;
-	unsigned int shefter = 1UL << (countbites - 1);
+	unsigned long int count_bites = sizeof(n) * 8;
+	int num = 0;
 
-	while (shefter > 0 && (n & shefter) == 0)
+	if (num == NULL)
+		return ('0');
+
+	while (num > 0 && (n & num) == 0)
 	{
-		shefter >>= 1;
+		num >>= 1;
 	}
-	while (shefter > 0)
+	while (num > 0)
 	{
-		putchar((n & shefter) ? '1' : '0');
-		shefter >>= 1;
+		putchar((n & num) ? '1' : '0');
+		num >>= 1;
 	}
 }
