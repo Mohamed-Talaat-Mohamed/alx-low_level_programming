@@ -10,8 +10,8 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned countbites = sizeof (n) * 8;
-	unsigned shefter = 1UL << (countbites - 1);
+	unsigned int countbites = sizeof(n) * 8;
+	unsigned int shefter = 1UL << (countbites - 1);
 
 	while (shefter > 0 && (n & shefter) == 0)
 	{
