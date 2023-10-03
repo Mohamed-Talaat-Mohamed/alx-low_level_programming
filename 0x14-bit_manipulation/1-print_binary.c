@@ -10,19 +10,22 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int count_bites = sizeof(n) * 8;
-	int num = 0;
+	unsigned long int j;
+	unsigned long int k = 0;
+	int i;
 
-	if (num == NULL)
-		return ('0');
+	for (i = 63; i >= 0; i--)
+	{
+		j = n >> i;
 
-	while (num > 0 && (n & num) == 0)
-	{
-		num >>= 1;
+		if (j & 1)
+		{
+			putchar('1');
+			k++;
+		}
+		else if (k)
+			putchar('0');
 	}
-	while (num > 0)
-	{
-		putchar((n & num) ? '1' : '0');
-		num >>= 1;
-	}
+		if (!k)
+			putchar('0');
 }
