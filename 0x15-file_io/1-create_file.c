@@ -23,10 +23,10 @@ int create_file(const char *filename, char *text_content)
 	if (fp == -1)
 		return (-1);
 
-	else if (!text_content)
+	if (!text_content)
 		x = strlen(text_content);
 
-	else if (write(fp, text_content, x) != -1)
+	if (write(fp, text_content, x) != -1)
 		return (1);
 
 	else
