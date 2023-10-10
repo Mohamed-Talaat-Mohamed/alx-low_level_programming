@@ -3,9 +3,6 @@
 /**
  *free_list - function to free linked list
  *@head: list pointer
- *
- *Discription: Function to free linked list
- *
  */
 
 void free_list(list_t *head)
