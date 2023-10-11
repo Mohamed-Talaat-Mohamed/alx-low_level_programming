@@ -1,7 +1,7 @@
+#include <elf.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -40,7 +40,7 @@ void check_elf(unsigned char *e_ident)
 }
 
 /**
- * print_class - a function to Print classic ELF header file
+ * print_class - a function to Print class ELF header file
  * @e_ident: pointer to ELF`s array
  */
 
