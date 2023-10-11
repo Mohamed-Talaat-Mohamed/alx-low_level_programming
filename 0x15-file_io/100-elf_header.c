@@ -65,8 +65,8 @@ void print_class(unsigned char *e_ident)
 }
 
 /**
- * print_magic - a function to Print magic ELF header file 
- * @e_ident: pointer to ELF`s array 
+ * print_magic - a function to Print magic ELF header file
+ * @e_ident: pointer to ELF`s array
  */
 
 void print_magic(unsigned char *e_ident)
